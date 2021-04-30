@@ -1,0 +1,152 @@
+// Imports
+@import "variables";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+#myBooks {
+    height: 100vh;
+    position: relative;
+    font-family: $police;
+    font-size: 0.4em;
+    padding-top: 3vh;
+    padding-right: 2vw;
+
+    #top{
+        height: 19vh;
+    }
+
+    h1{
+        background-color: $grey;
+        height: 7vh;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        box-shadow: 0px 3px 3px $shadow;
+        border: $shadow;
+        border-radius: 3px;
+        padding-top: 1vh;
+
+        img{
+        height: 6vh;
+        }
+    }
+
+    h1, h2{
+        text-align: center;
+    }
+
+    button, #search-button{
+        height: 5vh;
+        width: 30vw;
+        border-radius: 3px;
+        color: white;
+    }
+
+
+    #add-button{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -680%);
+        background-color: $dark-green;
+        
+
+        border-color: $dark-green;
+    }
+
+    #search-card{
+
+        display: none;
+
+        button, #search-button{
+            margin-top: 2vh;
+        }
+
+       
+
+        #cancel-button{
+            background-color: red;
+            margin-bottom: 2em;
+        }
+
+        input{
+            width: 90vw;
+            }
+
+        #search-button{
+            background-color: $light-green;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            }    
+
+    }
+
+
+
+
+    #display-results{
+
+        h2{
+           margin-top: 5em;
+           font-size: 0.4em; 
+        }
+        
+
+
+        #results{
+            .container{
+                .inner-card, .saved-card{
+                    border-style: solid;
+                    border-color: black;
+                    background-color: $card-grey;
+                    margin-bottom: 2em;
+                    margin-top: 5em;
+                    padding: 4em;
+
+                    p{
+                        margin-bottom: 2em;
+                        margin-top: 2em;
+                    }
+
+                    .book-title{
+                        font-size: 0.2em;
+                        font-weight: 800;
+                        margin-bottom: 12em;
+                        }
+
+                    .book-id{
+                        font-weight: 800;
+                        font-style: oblique;
+                    }
+
+                    .icon{
+                        float: right;
+
+                    }
+
+                    .book-img{
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 40%;
+                    }   
+                       
+                    
+                }
+            }
+        }
+
+    } 
+    
+    
+
+
+
+}
+
+
+

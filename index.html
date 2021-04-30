@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <!--<link type="text/css" href="/assets/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+  <title>Poch'Lib</title>
+
+
+</head>
+
+<body>
+
+<div id="myBooks">
+  <div id="top">
+
+    <h1 class="title"><img src="assets/img/logo.png" alt="logo"></h1>
+    <h2 class="h2">Nouveau Livre</h2>
+
+    <button id="add-button">Ajouter un livre</button>
+  </div>
+
+  <form id="search-card" onsubmit="getBook(); return false;">
+    <div>
+      <h3>Titre du livre</h3>
+      <input type="text" id="book-title" value="harry potter" name="book-title" required
+             minlength="4">
+    </div>
+    <div>
+      <h3>Auteur</h3>
+      <input type="text" id="author" value="rowling" name="author" required
+             minlength="4">
+    </div>
+    <div class= "box">
+      <button type="submit" id="search-button">Rechercher</button>
+      <button id="cancel-button">Annuler</button>
+    </div>
+  </form>
+
+  <hr>
+
+  <div id="display-results" style="visibility:hidden">
+    <h2>Résultats de recherche</h2>
+    <!---->	<div id="results"></div>
+  </div>
+
+
+  <div id="content">
+    <h2>Ma poch'liste</h2>
+    <div id="poch-list"></div>
+  </div>
+</div>
+
+<!-- JS files -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="js/add_book.js"></script>
+
+
+
+</body>
+
+</html>
